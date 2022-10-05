@@ -35,7 +35,7 @@ router.post('/register',async function(req,res,next){
     try {
         let user_exsist=await User.findOne({email:email})
         if(user_exsist){
-            res.json({
+           return res.json({
                 success:false,
                 msg:"User Already exsist"
             })
