@@ -1,5 +1,5 @@
 const express=require('express')
-const colors=require('colors')                      // to show the colors in the console
+                    // to show the colors in the console
 
 //Morgan: Morgan is an HTTP request level Middleware. It is a great tool that logs the requests along with some other information depending upon its configuration and the preset used. It proves to be very helpful while debugging and also if you want to create Log files.
 const morgan=require('morgan')
@@ -30,4 +30,4 @@ app.use('/api/todo/auth',require('./routes/user'))
 const PORT=process.env.PORT || 3000                              // We can access the environment file like this 
 //agar server ka port nhi mila toh 3000 pe run hoga
 
-app.listen(PORT,console.log(`Server running on port  ${PORT}`.yellow.underline.bold))
+app.listen(PORT,console.log(`Server running on port  ${PORT}`))
