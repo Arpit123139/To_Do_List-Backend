@@ -5,7 +5,7 @@ const colors=require('colors')                      // to show the colors in the
 const morgan=require('morgan')
 const dotenv=require('dotenv')                   // for environment file deployment
 const connectDB = require('./config/db')
-const path=require('path')
+
 
 const app=express()
 
