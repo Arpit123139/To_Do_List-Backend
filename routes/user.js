@@ -101,9 +101,9 @@ router.post('/login',async(req,res,next)=>{
 
         let user=await User.findOne({email:email})
         if(!user){
-            res.status(400).json({
+            return res.status(400).json({
                 success:false,
-                msg:"User is not register"
+                msg:"User is not register Go And Register First!!!!!!!!!!!!!!!!!!!!1"
             })
         }else{
             const isMatch=await bcryptjs.compare(password,user.password)
