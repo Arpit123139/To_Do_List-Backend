@@ -62,7 +62,7 @@ router.post('/register',async function(req,res,next){
         
         //creating a token witha payLoad Generation of a Token
         jwt.sign(payload,process.env.jwtUserSecret,{
-            expiresIn:360000
+            expiresIn:3600000000000
 
         },(err,token)=>{
             if(err){
